@@ -1,0 +1,73 @@
+body {
+    background-color: #222;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 8px rgb(105, 105, 212);
+}
+
+.task-div {
+    border: 2px solid white;
+    border-radius: 4px;
+    counter-reset: task-counter;
+}
+
+.task-div>div:not(:first-child) {
+    border-top: 2px solid white;
+}
+
+.task-row {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 18px;
+    text-transform: capitalize;
+    overflow: auto;
+}
+
+.clickable-div {
+    cursor: pointer;
+}
+
+.task-row.pending-task-completed {
+    display: none;
+}
+
+.pending-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.task-num {
+    border-right: 2px solid white;
+    padding: 10px;
+}
+
+.task-row .task-num::before {
+    content: counter(task-counter)".";
+    counter-increment: task-counter;
+}
+
+.task-column {
+    padding: 10px;
+}
+
+.task-input {
+    width:81%;
+}
+
+.clickable-task-row {
+    cursor: pointer;
+}
+
+.btn[disabled] {
+    cursor: not-allowed;
+    opacity: .4;
+}
