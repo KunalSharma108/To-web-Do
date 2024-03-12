@@ -40,11 +40,6 @@ npm start
 
 3. Start managing your to-do list by adding, completing, and deleting tasks.
 
-
-## Roadmap
-
-- Implement data persistence using cookies to prevent task loss upon page refresh.
-
 ## Contributing
 
 Contributions are welcome! If you have any suggestions, bug reports, or feature requests, feel free to open an issue or submit a pull request.
