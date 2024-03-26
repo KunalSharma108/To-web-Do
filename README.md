@@ -15,7 +15,7 @@ To-Web-Do is a simple web-based to-do list application built using React. It all
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/to-web-do.git
+git clone https://github.com/KunalSharma108/To-web-Do.git
 ```
 
 2. Navigate into the project directory:
